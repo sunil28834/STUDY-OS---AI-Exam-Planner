@@ -1,89 +1,125 @@
-🧠 StudyOS — AI Exam Planner
+🧠 StudyOS — AI-Powered Intelligent Exam Planner
 
-An intelligent, adaptive study planner built with Streamlit. Generate personalized study schedules, visualize your workload, and get AI-powered insights — all from a sleek, animated dashboard.
+StudyOS is a modern AI-driven study planning web app built using Streamlit that helps students generate a personalized, adaptive study schedule based on their subjects, available time, and exam date.
 
-✨ Features
+It combines smart scheduling logic, data visualization, and a beautiful glassmorphism UI to deliver an engaging productivity experience.
 
-Smart Study Plan Generator — Enter your subjects, daily study hours, and exam date to instantly generate a full day-by-day schedule
-Adaptive Difficulty Weights — Hours are distributed intelligently across subjects using a weighted normalization system
-Interactive Dashboard — Live metrics, donut charts, weekly load bar charts, and a scrollable schedule table
-Subject Pill Tags — Color-coded subject badges for quick visual identification
-Study Science Tips — Built-in evidence-based study strategies (spaced repetition, Pomodoro, active recall, and more)
-Pro UI with Animations — Glass-morphism cards, CSS keyframe animations, gradient accents, and a fully dark-themed interface
+🚀 Features
 
+✨ AI-Based Study Planning
 
-📸 Preview
-Input PanelDashboardConfigure subjects, hours & exam dateMetrics, charts & full schedule
+Automatically distributes study hours across subjects
 
-🚀 Getting Started
-Prerequisites
+Uses weighted logic for smarter planning
 
-Python 3.8 or higher
-pip
+📅 Dynamic Schedule Generation
 
-Installation
+Generates a day-wise study plan until exam date
 
-Clone the repository
+Calculates sessions and hours per subject
 
-bashgit clone https://github.com/your-username/studyos-ai-planner.git
+📊 Interactive Dashboard
+
+Subject-wise time distribution (Pie Chart)
+
+Weekly workload analysis (Bar Chart)
+
+Progress-based metrics
+
+🎨 Modern UI/UX
+
+Glassmorphism design
+
+Animated gradients & particle grid background
+
+Responsive layout with smooth transitions
+
+📈 Performance Metrics
+
+Total study hours
+
+Daily average
+
+Days remaining
+
+Subject coverage
+
+📌 Built-in Study Tips
+
+Spaced repetition
+
+Pomodoro technique
+
+Active recall strategies
+
+🛠️ Tech Stack
+
+Frontend & App Framework: Streamlit
+
+Data Handling: Pandas, NumPy
+
+Visualization: Matplotlib
+
+Styling: Custom CSS (Glass UI + Animations)
+
+Logic: Python (Adaptive scheduling algorithm)
+
+📂 Project Structure
+📦 StudyOS
+ ┣ 📜 app.py
+ ┣ 📜 README.md
+ ┗ 📜 requirements.txt
+⚙️ Installation & Setup
+1️⃣ Clone the repository
+git clone https://github.com/your-username/studyos-ai-planner.git
 cd studyos-ai-planner
+2️⃣ Install dependencies
+pip install -r requirements.txt
+3️⃣ Run the app
+streamlit run app.py
+📸 How It Works
 
-Create a virtual environment (recommended)
+Enter your subjects (comma-separated)
 
-bashpython -m venv .venv
+Select daily study hours
 
-# Activate it
-# Windows:
-.venv\Scripts\activate
-# Mac/Linux:
-source .venv/bin/activate
+Choose your exam date
 
-Install dependencies
+Click Generate Plan
 
-bashpip install -r requirements.txt
+Get your personalized study roadmap instantly
 
-Run the app
+💡 Use Cases
 
-bashstreamlit run app.py
+Students preparing for exams 🎓
 
-Open your browser at http://localhost:8501
+Competitive exam aspirants 📚
 
+Time management & productivity planning ⏱️
 
-📦 Requirements
-streamlit>=1.28.0
-pandas
-matplotlib
-numpy
-Or install directly:
-bashpip install streamlit pandas matplotlib numpy
+Academic performance optimization 📈
 
-🗂️ Project Structure
-studyos-ai-planner/
-│
-├── app.py                  # Main Streamlit application
-├── requirements.txt        # Python dependencies
-├── README.md               # Project documentation
-└── .gitignore              # Git ignore file
+🔮 Future Enhancements
 
-🧩 How It Works
+AI difficulty-based subject weighting
 
-Enter your subjects — comma-separated (e.g. Mathematics, Physics, Chemistry)
-Set your daily study hours — using the slider (1–12 hours)
-Pick your exam date — the app calculates days remaining automatically
-Hit Generate — the planner builds a full schedule, distributes hours across subjects using weighted normalization, and renders the dashboard
+Integration with calendar apps
 
-Weighted Hour Distribution
-Each subject is assigned a random weight between 0.8 and 1.5, then normalized so the total daily hours always equals your target — no matter how many subjects you have.
-pythonnorm_weights = [w / total_weight for w in weights]
-hours = hours_per_day * norm_weights[i]
+User login & saved plans
 
-📊 Dashboard Sections
-SectionDescriptionMetric CardsTotal hours, days left, subject count, daily averageFull Schedule TableDay-by-day breakdown with progress bars per subjectSubject DistributionDonut chart showing proportion of hours per subjectWeekly LoadBar chart showing total study hours per weekStudy Tips5 evidence-based study strategy cards
+ML-based performance prediction
 
-🛠️ Built With
+Mobile app version
 
-Streamlit — App framework
-Pandas — Data manipulation
-Matplotlib — Charts and visualizations
-NumPy — Numerical operations
-Google Fonts — Syne & DM Sans typography
+🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit a PR.
+
+📜 License
+
+This project is licensed under the MIT License.
+
+👨‍💻 Author
+
+Sunil T R
+AI/ML Enthusiast | Data Analytics | Software Engineer
